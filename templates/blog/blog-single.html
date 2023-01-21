@@ -67,21 +67,16 @@
 											<a href="#"><span class="lnr text-white lnr-arrow-left"></span></a>
 										</div>
 										<div class="detials">
-											{%if page_obj.has_previous %} {# whether the previous page exists #}
-												<a href="?page={{page_obj.previous_page_number}}"><</a> {# link to the prev page #}
-											{% endif %}
+
 											<span>{{page_obj.number}}</span> {# the current page number #}
-											# <p>Prev Post</p>
-											# <a href="#"><h4>Space The Final Frontier</h4></a>
+											<p>Prev Post</p>
+											<a href="#"><h4>Space The Final Frontier</h4></a>
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
 										<div class="detials">
-											{%if page_obj.has_next %} {# whether the next page exists #}
-												<a href="?page={{page_obj.next_page_number}}">></a> {# link to the next page #}
-											{% endif %}
-											#<p>Next Post</p>
-											#<a href="#"><h4>Telescopes 101</h4></a>
+											<p>Next Post</p>
+											<a href="#"><h4>Telescopes 101</h4></a>
 										</div>
 										<div class="arrow">
 											<a href="#"><span class="lnr text-white lnr-arrow-right"></span></a>
