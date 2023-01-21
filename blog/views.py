@@ -13,3 +13,6 @@ def single_view(request,pid):
     context = {'post' : post}
     return render(request,'blog/blog-single.html',context)
 
+def test(request):
+    return render(request,'test.html')
+
